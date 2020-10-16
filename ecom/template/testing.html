@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% load static %}
+	<title>Testing | DMEZ Healthcare | Online Medicine</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" ></script>
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	
+
+</head>
+<body>
+	<div class="top-nav-bar">
+		<div class="search-box">
+			<i class="fa fa-bars" id="menu-btn" onclick="openmenu()"></i>
+			<i class="fa fa-times" id="close-btn" onclick="closemenu()"></i>
+
+			<a href="index.html"><img src="{% static 'img/logo.jpg'%}" class="logo" width="55px" height="50px"></a>
+			<input type="text" class="form-control" placeholder="Search">
+			<span class="input-group-text"><a href="#" style="color: #fff">Upload Precriptions</a></span>		
+		</div>
+		<div class="menu-bar">
+			<ul>
+				<a href="#"  style="color: #fff"><li><i class="fa fa-shopping-basket"></i>Cart</li></a>
+				<a href="account.html" style="color: #fff"><li><i class="fa fa-user"></i>Login</li></a>
+				<a href="#" style="color: #fff"><li><i class="fa fa-handshake-o"></i>Join</li></a>
+			</ul>
+		</div>		
+	</div>
+	<section class="header">
+		<div class="side-menu" id="side-menu">
+			<ul>
+				<li>On Sale<i class="fa fa-angle-right"></i>
+				<ul>
+					<li>Mobiles</li>
+					<li>Tablets</li>
+					<li>Smart Watch</li>
+					<li>Childern's Toys</li>
+					<li>Game Zone</li>
+					<li>Ladies Purse</li>
+				</ul>
+				</li>
+				<a href="about.html"><li>About Us<i class="fa fa-angle-right"></i></a>
+				</li>
+				<li>Order Medicine<i class="fa fa-angle-right"></i>
+				<ul>
+					<li>All Computers</li>
+					<li>Tablets</li>
+					<li>Destops</li>
+					<li>Drives and Storage</li>
+					<li>Game Zone</li>
+					<li>Desktops</li>
+				</ul>
+				</li>
+				<li>Healthcare Product<i class="fa fa-angle-right"></i>
+				<ul>
+					<li>All Books</li>
+					<li>Fiction Books</li>
+					<li>Childern's Book</li>
+					<li>Kindle eBooks</li>
+				</ul>
+				</li>
+				
+				<a href="testing.html"><li>Covid Testing<i class="fa fa-angle-right"></i></a>
+				</li>
+
+				<li>Offers<i class="fa fa-angle-right"></i>
+				<ul>
+					<li>Moterbike Acessories</li>
+					<li>Car Parts</li>
+					<li>Car and Bike Cares</li>
+					<li>All Moterbike Products</li>
+				</ul>
+				</li>
+				<li>Upcoming Products<i class="fa fa-angle-right"></i>
+				<ul>
+					<li>All Movies</li>
+					<li>All Hindi</li>
+					<li>Blu-ray</li>
+					<li>All English</li>
+				</ul>
+				</li>
+
+				<a href="test.html"><li>Sports & Fitness<i class="fa fa-angle-right"></i></a>
+
+				</li>
+				<li>Body Care<i class="fa fa-angle-right"></i>
+				<ul>
+					<li>Beauty & Grooming</li>
+					<li>Luxury Beauty</li>
+					<li>Make-up</li>
+					<li>Health & Personal Care</li>
+				</ul>
+				</li>
+				<li>Upload Symptoms<i class="fa fa-angle-right"></i>
+				<ul>
+					<li>All Furniture</li>
+					<li>Chairs and Tables</li>
+					<li>Beds and Sofas</li>
+					<li>Dining Set</li>
+				</ul>
+				</li>
+				<a href="contact.html"><li>Contact Us<i class="fa fa-angle-right"></i></a>
+				</li>
+				<a href="account.html"><li>Login <i class="fa fa-angle-right"></i></a>
+				</li>
+				<a href="account.html"><li>Register <i class="fa fa-angle-right"></i></a>
+				</li>
+			</ul>			
+		</div>
+		</div>		
+	</section>
+    
+
+
+<div class="container-fluid mb-4" style="padding-left: 0; padding-right: 0;">
+	<img src="{% static 'img/a1.jpg' %}" width="100%">
+</div>
+
+<!------------------------------------map------------------------>
+<div class="offer">
+	<div class="container">
+		<div class="row">
+			<div class="container-fluid">
+                <div class="map-responsive">
+                    <!-- <script>
+                    let map;
+
+                        function initMap() {
+                        map = new google.maps.Map(document.getElementById("map"), {
+                            center: {
+                        lat: -34.397,
+                        lng: 150.644,
+                            },
+                            zoom: 8,
+                    });
+                        }
+                    
+                    </script> -->
+                    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+                    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIwzALxUPNbatRBj3Xi1Uhp0fFzwWNBkE&callback=initMap&libraries=&v=weekly" defer
+					></script> -->
+					<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIwzALxUPNbatRBj3Xi1Uhp0fFzwWNBkE&libraries=places">
+					</script>
+                    <script type="text/javascript">
+                        x = navigator.geolocation;
+
+                        x.getCurrentPosition(success , failure);
+                        
+                        function initMap(){
+                            
+                        }
+						var infowindow;
+						var map;
+						var marker;
+						var service;
+
+                        function success(position){
+                            var myLat = position.coords.latitude;
+                            var myLong = position.coords.longitude;
+
+                            var coords = new google.maps.LatLng(myLat,myLong);
+
+                            var mapOptions = {
+                                zoom:15,
+                                center:coords,
+                                mapTypeId: google.maps.MapTypeId.ROADMAP
+                            }
+							infowindow = new google.maps.InfoWindow();
+                            map = new google.maps.Map(document.getElementById("map"),mapOptions);
+                            marker = new google.maps.Marker({map:map , position:coords});
+							service = new google.maps.places.PlacesService(map);
+							var request = {
+									location: coords,
+									radius: '500',
+									query: 'Hospital'
+								};
+								service.textSearch(request, callback);
+							
+							function callback(results, status) {
+							console.log("randi")
+							if (status == google.maps.places.PlacesServiceStatus.OK) {
+								console.log(results.length);
+								console.log(results);
+								for (var i = 0; i < results.length; i++) {
+									var place = results[i];
+									createMarker(results[i]);
+								}
+							}
+						}
+						function createMarker(place) {
+							var placeLoc = place.geometry.location;
+							var marker = new google.maps.Marker({
+								map: map,
+								position: place.geometry.location
+							});
+
+							google.maps.event.addListener(marker, 'click', function() {
+								infowindow.setContent(place.name);
+								infowindow.open(map, this);
+							});
+						}
+
+                        }   
+                        function failure(){}
+
+
+						
+						
+
+						
+
+						
+                    </script>
+                    <div class="map-responsive" id="map" style="height: 100%; width: 100%;" ></div>
+            </div>
+            </div>
+		</div>
+	</div>	
+</div>
+
+
+<!---------------------------------------------graph------------------------>
+<div class="testimonial mb-5">
+	<div class="small-container">
+		<h1 class="text-center mt-4 heading">Track Covid Tonight</h1>
+        <canvas id="myChart"></canvas>
+		<div class="row">
+			<div class="myList"></div>
+    		<!-- <script src="./scripts.js"></script> -->
+			<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+			<script>
+				const api = 'https://disease.sh/v3/covid-19/historical/all?lastdays=90';
+
+				const getData = async () => {
+				const response = await fetch(`${api}`);
+				if (response.ok) {
+					return await response.json();
+				} else {
+					return Promise.reject(response.status);
+				}
+				};
+
+				const result = getData();
+				result
+				.then((data) => {
+					let date = Object.keys(data.cases);
+					let total = Object.values(data.cases);
+					let deaths = Object.values(data.deaths);
+					let recovered = Object.values(data.recovered);
+
+					var ctx = document.getElementById('myChart').getContext('2d');
+					let myChart = new Chart(ctx, {
+					type: 'line',
+					data: {
+						labels: date,
+						datasets: [
+						{
+							label: 'Total Cases',
+							data: total,
+							borderColor: 'rgba(255, 99, 132)',
+							fill: false,
+						},
+						{
+							label: 'Recovered Cases',
+							data: recovered,
+							borderColor: 'rgba(153, 102, 255, 1)',
+							fill: false,
+						},
+						{
+							label: 'Deaths',
+							data: deaths,
+							borderColor: 'rgba(75, 192, 192, 1)',
+							fill: false,
+						},
+						],
+					},
+					options: {
+						scales: {
+						yAxes: [
+							{
+							scaleLabel: {
+								display: true,
+								labelString: 'Numbers in Thousands',
+							},
+							},
+						],
+						xAxes: [
+							{
+							scaleLabel: {
+								display: true,
+								labelString: 'Date(DD/MM/YYYY)',
+							},
+							},
+						],
+						},
+						title: {
+						display: true,
+						text: `Coronovirus Cases in India for Last Three Months`,
+						},
+					},
+					});
+				})
+				.catch((error) => {
+					console.log('Error: ', error);
+				});
+			</script>
+		</div>
+	</div>
+</div>
+<!--------------------------website features------------------------------------------->
+
+<section class="website-features">
+	<div class="container mt-3">
+		<div class="row">
+			<div class="col-md-3 feature-box">
+				<img src="{% static 'img/l1.png' %}">
+				<div class="feature-text">
+					<p><b>Guaranteed 100% </b> Orginal items</p><br>
+				</div>				
+			</div>
+			<div class="col-md-3 feature-box">
+				<img src="{% static 'img/l2.png' %}">
+				<div class="feature-text">
+					<p><b>Easy Returns</b> on each damaged items</p><br>
+				</div>				
+			</div>
+			<div class="col-md-3 feature-box">
+				<img src="{% static 'img/l3.png' %}">
+				<div class="feature-text">
+					<p><b>Free delivery for every</b> order more than Rs200.</p><br>
+				</div>				
+			</div>
+			<div class="col-md-3 feature-box">
+				<img src="{% static 'img/l6.png' %}">
+				<div class="feature-text">
+					<p><b>Guaranteed discount</b> on every products</p><br>
+				</div>				
+			</div>
+			
+		</div>
+	</div>
+</section>
+<hr>
+
+
+<footer class="container py-5">
+  <div class="row">
+    <div class="col-6 col-md">
+      <h5>Company</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#">Career</a></li>
+        <li><a class="text-muted" href="#">Blog</a></li>
+        <li><a class="text-muted" href="#">Partner with PharmEasy</a></li>
+      </ul>
+      <h5>Our Services</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#">Order Medicine</a></li>
+        <li><a class="text-muted" href="#">Healthcare Products</a></li>
+        <li><a class="text-muted" href="#">Diagnostic Tests</a></li>
+      </ul>
+    </div>
+
+    <div class="col-6 col-md">
+      <h5>Featured Categories</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#">Personal Care</a></li>
+        <li><a class="text-muted" href="#">Daily Essentials</a></li>
+        <li><a class="text-muted" href="#">Ayurvedic Store</a></li>
+        <li><a class="text-muted" href="#">Mother & Baby care</a></li>
+        <li><a class="text-muted" href="#">Sexual Wellness</a></li>
+        <li><a class="text-muted" href="#">Diabetic care</a></li>
+        <li><a class="text-muted" href="#">Nutrition & Suppliments</a></li>
+        <li><a class="text-muted" href="#">Proteins & Vitamins</a></li>
+      </ul>
+
+    </div>
+    <div class="col-6 col-md">
+      <h5>Need Help</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#">Browse All Medicines</a></li>
+        <li><a class="text-muted" href="#">Browse All Molecules</a></li>
+        <li><a class="text-muted" href="#">FAQs</a></li>
+      </ul>
+
+      <h5>Policy Info</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#">Editorial Policy</a></li>
+        <li><a class="text-muted" href="#">Privacy Policy</a></li>
+        <li><a class="text-muted" href="#">Terms and condition</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>&nbsp&nbspFollow Us</h5>
+      <ul class="list-unstyled text-small">
+      	<i class="fa fa-google" aria-hidden="true"></i>
+      	<i class="fa fa-facebook" aria-hidden="true"></i>
+      	<i class="fa fa-twitter" aria-hidden="true"></i>
+      	<i class="fa fa-linkedin" aria-hidden="true"></i>
+      	<i class="fa fa-youtube" aria-hidden="true"></i>
+       <br>
+      </ul>
+    </div>
+  </div>
+</footer>
+<hr>
+<center>
+<p>&copy; Copyright issued to DMEZ- 2020</p>
+</center>
+
+	<script>
+		function openmenu()
+		{
+			document.getElementById("side-menu").style.display="block"
+			document.getElementById("menu-btn").style.display="none"
+			document.getElementById("close-btn").style.display="block"
+		}
+		function closemenu()
+		{
+			document.getElementById("side-menu").style.display="none"
+			document.getElementById("menu-btn").style.display="block"
+			document.getElementById("close-btn").style.display="none"
+		}
+	</script>
+
+
+</body>
+</html>
